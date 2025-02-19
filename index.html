@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EARTH-S: An Educational E-learning Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>EARTH-S: An Educational E-learning Site</h1>
+    </header>
+
+    <!-- Home Page (Lessons) -->
+    <div id="home-page">
+        <p>Discover the wonders of Earth’s history, geology, and evolution!</p>
+
+        <div id="lesson-list">
+            <!-- Lesson 1 -->
+            <div class="lesson-item" onclick="openLesson('lesson1', 'https://www.youtube.com/embed/something1')">
+                <img src="lesson1-thumbnail.jpg" alt="Lesson 1 Thumbnail" class="thumbnail">
+                <div class="lesson-info">
+                    <h2>Lesson 1: Geologic Time Scale</h2>
+                    <p>Understand Earth's history through the Geologic Time Scale.</p>
+                </div>
+            </div>
+
+            <!-- Lesson 2 -->
+            <div class="lesson-item" onclick="openLesson('lesson2', 'https://www.youtube.com/embed/something2')">
+                <img src="lesson2-thumbnail.jpg" alt="Lesson 2 Thumbnail" class="thumbnail">
+                <div class="lesson-info">
+                    <h2>Lesson 2: Fossils and Evolution</h2>
+                    <p>Explore how fossils provide evidence of evolution.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lesson Section -->
+    <div id="lesson-section" class="hidden">
+        <button id="backArrow" onclick="goBackToHome()">⬅ Back</button>
+        <h1 id="lesson-title"></h1>
+        <p id="lesson-content"></p>
+
+        <!-- YouTube Video Container -->
+        <div id="video-container">
+            <iframe id="lesson-video" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- "Start Quiz" Button -->
+        <a href="https://james8272521817.github.io/EARTH222/" target="_blank">
+            <button id="startQuizButton" class="quiz-btn">📝 Start Quiz</button>
+        </a>
+    </div>
+
+    <script src="script.js"></script>  
+</body>
+</html>

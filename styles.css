@@ -1,0 +1,47 @@
+/* Add spacing between lesson items */
+.lesson-item {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    margin: 20px auto; /* Adds margin around each item */
+    border-radius: 10px;
+    width: 90%;
+    cursor: pointer;
+    max-width: 600px; /* Prevents too wide elements */
+}
+
+/* Ensure thumbnails are properly spaced */
+.thumbnail {
+    width: 120px;
+    height: 80px;
+    margin-right: 20px; /* Increases space between image and text */
+    border-radius: 5px;
+}
+
+/* Center lesson info properly */
+.lesson-info {
+    text-align: left;
+}
+
+/* Add padding and spacing to header and text */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    margin-bottom: 20px; /* Adds space below the header */
+}
+
+#home-page {
+    padding: 20px;
+}
+
+/* Add spacing to the overall layout */
+#lesson-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Adds space between lessons */
+}
